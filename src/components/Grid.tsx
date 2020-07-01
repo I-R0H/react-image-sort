@@ -42,6 +42,7 @@ const StyledReactSortable = styled(ReactSortable)`
     display: grid;
     grid-template-columns: repeat(auto-fit, 100px);
     grid-gap: 16px;
+    justify-content: space-evenly;
 `
 
 const Sortable = styled.div`
