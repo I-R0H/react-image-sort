@@ -17,7 +17,7 @@ const initial = Array.from({ length: 10 }, (v, k) => k).map(k => {
 export function Grid() {
   const [images, setImages] = React.useState(initial);
 
-  const onContextMenu: MouseEventHandler<HTMLImageElement> = () => false
+  const onContextMenu: MouseEventHandler<HTMLImageElement> = (e) => e.preventDefault()
 
   return (
     <Wrapper>

@@ -17,7 +17,7 @@ const initial = Array.from({ length: 10 }, (v, k) => k).map(k => {
 export const Horizontal: React.FC = () => {
   const [images, setImages] = useState<Image[]>(initial);
 
-  const onContextMenu: MouseEventHandler<HTMLImageElement> = () => false
+  const onContextMenu: MouseEventHandler<HTMLImageElement> = (e) => e.preventDefault()
 
   return (
     <Wrapper>
